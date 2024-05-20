@@ -1,0 +1,36 @@
+footer {
+  background-color: #3F5DB3;
+  padding-top: 6.7rem;
+  padding-bottom: 6.5rem;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 180%;
+    color: #FFFFFF;
+  }
+  p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 180%;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  @media(max-width: 560px) {
+    padding: 4rem 0;
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .text {
+      margin-bottom: 4rem;
+    }
+    h4 {
+      text-align: center;
+    }
+  }
+}

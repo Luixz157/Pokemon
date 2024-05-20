@@ -1,0 +1,310 @@
+.tag {
+  display: inline-block;
+  line-height: 2.4rem;
+  padding: 0 1.1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  margin: 0 5px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &.grass {
+    background-color: rgba(114, 184, 97, 0.1);
+    color: #73B861;
+  }
+  &.poison {
+    background-color: rgba(172, 106, 202, 0.1);
+    color: #AC6ACA;
+  }
+  &.water {
+    background-color: rgba(79, 120, 190, 0.1);
+    color: #4F77BE;
+  }
+  &.fire {
+    background-color: rgba(233, 99, 3, 0.1);
+    color: #E96303;
+  }
+  &.psychic {
+    background-color: rgba(235, 139, 132, 0.1);
+    color: #EB8B85;
+  }
+  &.flying {
+    background-color: rgba(117, 140, 189, 0.1);
+    color: #758CBD;
+  }
+  &.ice {
+    background-color: rgba(113, 186, 171, 0.1);
+    color: #71BAAC;
+  }
+  &.ground {
+    background-color: rgba(206, 128, 86, 0.1);
+    color: #CE8056;
+  }
+  &.rock {
+    background-color: rgba(132, 190, 179, 0.1);
+    color: #84BEB3;
+  }
+  &.electric {
+    background-color: rgba(245, 209, 5, 0.1);
+    color: #D4BC34;
+  }
+  &.bug {
+    background-color: rgba(156, 186, 72, 0.1);
+    color: #9BBA48;
+  }
+  &.dark {
+    background-color: rgba(89, 87, 97, 0.1);
+    color: #595761;
+  }
+  &.dragon {
+    background-color: rgba(44, 106, 193, 0.1);
+    color: #2C6AC1;
+  }
+  &.fairy {
+    background-color: rgba(226, 150, 225, 0.1);
+    color: #E296E1;
+  }
+  &.fighting {
+    background-color: rgba(196, 79, 99, 0.24);
+    color: #C44D61;
+  }
+  &.ghost {
+    background-color: rgba(97, 110, 183, 0.1);
+    color: #616EB7;
+  }
+  &.steel {
+    background-color: rgba(101, 148, 161, 0.1);
+    color: #6594A1;
+  }
+  &.normal {
+    background-color: rgba(144, 144, 144, 0.1);
+    color: #909090;
+  }
+}
+
+.card-pokemon {
+  position: relative;
+  bottom: 0;
+  max-width: 100%;
+  height: 30.4rem;
+  background-color: #ffffff;
+  border: 0;
+  box-shadow: 0px 10px 51px -5px rgba(183, 189, 193, 0.3);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all .2s;
+  animation: fadeIn .3s forwards;
+  &:hover {
+    box-shadow: 0px 12px 40px -5px rgba(90, 96, 100, 0.3);
+    bottom: 2px;
+  }
+  &.grass {
+    .image {
+      &:before {
+        background-color: #D6EBDC;
+      }
+    }
+  }
+  &.fire {
+    .image {
+      &:before {
+        background-color: #FFEBCA;
+      }
+    }
+  }
+  &.water {
+    .image {
+      &:before {
+        background-color: #DFECF5;
+      }
+    }
+  }
+  &.normal {
+    .image {
+      &:before {
+        background-color: rgba(141, 141, 141, 0.2);
+      }
+    }
+  }
+  &.fighting {
+    .image {
+      &:before {
+        background-color: rgba(196, 77, 97, 0.2);
+      }
+    }
+  }
+  &.flying {
+    .image {
+      &:before {
+        background-color: rgba(158, 180, 227, 0.2);
+      }
+    }
+  }
+  &.poison {
+    .image {
+      &:before {
+        background-color: rgba(172, 106, 202, 0.2);
+      }
+    }
+  }
+  &.ground {
+    .image {
+      &:before {
+        background-color: rgba(203, 119, 74, 0.2);
+      }
+    }
+  }
+  &.rock {
+    .image {
+      &:before {
+        background-color: rgba(134, 203, 190, 0.2);
+      }
+    }
+  }
+  &.bug {
+    .image {
+      &:before {
+        background-color: rgba(131, 158, 56, 0.2);
+      }
+    }
+  }
+  &.ghost {
+    .image {
+      &:before {
+        background-color: rgba(97, 110, 183, 0.2);
+      }
+    }
+  }
+  &.steel {
+    .image {
+      &:before {
+        background-color: rgba(101, 148, 161, 0.2);
+      }
+    }
+  }
+  &.electric {
+    .image {
+      &:before {
+        background-color: rgba(207, 190, 93, 0.2);
+      }
+    }
+  }
+  &.psychic {
+    .image {
+      &:before {
+        background-color: rgba(235, 140, 133, 0.2);
+      }
+    }
+  }
+  &.ice {
+    .image {
+      &:before {
+        background-color: rgba(124, 197, 182, 0.2);
+      }
+    }
+  }
+  &.dragon {
+    .image {
+      &:before {
+        background-color: rgba(70, 105, 153, 0.2);
+      }
+    }
+  }
+  &.dark {
+    .image {
+      &:before {
+        background-color: rgba(61, 60, 63, 0.2);
+      }
+    }
+  }
+  &.fairy {
+    .image {
+      &:before {
+        background-color: rgba(221, 138, 220, 0.2);
+      }
+    }
+  }
+  .image {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+    z-index: 2;
+    &:before {
+      content: "";
+      width: 16.5rem;
+      height: 16.5rem;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+    }
+    img {
+      max-width: 55%;
+      max-height: 200px;
+    }
+  }
+  .info {
+    display: flex;
+    padding: 0 2.8rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    & > div {
+      span {
+        display: block;
+        text-align: left;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 150%;
+        color: #7A7D80;
+        margin-bottom: 0.6rem;
+      }
+      strong {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: #2F3133;
+      }
+    }
+    img {
+      margin-bottom: 0.5rem;
+    }
+    .icon {
+      width: 2.8rem;
+      height: 2.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-position: center center;
+      background-repeat: no-repeat;
+      &-grass {
+        background-image: url("../img/icon-grass.svg");
+      }
+      &-fire {
+        background-image: url("../img/fire.svg");
+      }
+      &-water {
+        background-image: url("../img/water.svg");
+      }
+      &-ghost {
+        background-image: url("../img/ghost.svg");
+      }
+      &-stone {
+        background-image: url("../img/stone.svg");
+      }
+      &-plants {
+        background-image: url("../img/plants.svg");
+      }
+      &-bug {
+        background-image: url("../img/bug.svg");
+      }
+    }
+  }
+}
+
